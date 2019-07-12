@@ -3,21 +3,33 @@
      <meta charset"utf-8" />
      <title>Portfolio</title>
    <link rel="stylesheet" href="Css/Commons.css" />
+   <link rel="stylesheet" href="Css/humbarger.css" />
    <script src="Js/button.js"></script>
+   <script src="Js/humbarger.js"></script>
 
    <meta name="viewport" content="width=device-width maximum-scale=1 minimum-scale=1 user-scalable=no" />
     </head>
 <body>
         <div></div>
-<div class=menuBar>
-    <div class="menu title">Introduction</div>
-    <div class=menu><a href="index.html" >Home</a></div>
-    <div class=menu><a href="Scene/about.html" >About</a></div>
-    <div class=menu><a href="Scene/Products.html" >Products</a></div>
-</div>
-<div id="backTop">⇧</div>
-<div class="footer">
-        footer        
-    </div>
+<div id="backTop"><<</div>
+<footer class="footer">
+    <a href="https://github.com/ToshiyaMatsuoka" ><b>GitHubAccount</b></a>
+</footer>
+<header class="header">
+        <nav class="global-nav">
+          <ul class="global-nav__list">
+                <div class="menu global-nav__item">Home</div>
+                <div class="menu global-nav__item"><a href="Scene/about.html" >About</a></div>
+                <div class="menu global-nav__item" ><a href="Scene/Products.html" >Products</a></div>
+          </ul>
+        </nav>
+        <div class="hamburger" id="js-hamburger">
+          <span class="hamburger__line hamburger__line--1"></span>
+          <span class="hamburger__line hamburger__line--2"></span>
+          <span class="hamburger__line hamburger__line--3"></span>
+        </div>
+        <div class="black-bg" id="js-black-bg">    
+        </div>
+</header>
 </body>
 </HTML>
