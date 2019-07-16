@@ -6,6 +6,11 @@ window.addEventListener('DOMContentLoaded', ()=>{
         scrollTo(0,0);
     }
     );
+    var cHeight = document.querySelector("body").clientHeight;
+    var sHeight = document.querySelector("body").scrollHeight;
+    if((sHeight-cHeight)<=0){
+      document.getElementById("backTop").style.display="none";
+    }
 });
 window.onscroll = ()=>{    
         // let obj = window.querySelector("body");
